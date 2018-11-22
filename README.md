@@ -19,6 +19,9 @@ For a quick start, please ensure the following.
 
    `cd Q-Hbert/`
 
+* Need help? Check out our  [Tutorial](docs/Quick_start_GUIDE.ipynb)
+
+
 ## Features
 
 
