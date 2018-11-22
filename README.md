@@ -26,8 +26,8 @@ For a quick start, please ensure the following.
 
 
 ## Documentation
-
-
+* For a tutorial of our repository: [Quick Start Guide](docs/Quick_start_GUIDE.ipynb)
+* How is the data generated? [Data Generation Explanation](docs/data_gen_expln.ipynb)
 
 
 ## Contributing
