@@ -1,7 +1,7 @@
 # ![](auxillary/logo.png)
 
 ## Introduction
-Ǫ́-Hbert is a Quantum Computing library that reconstructs quantum states using Machine Learning.
+Ǫ́-Hbert is a Quantum Computing library that reconstructs quantum states using Unsupervised Learning.
 
 Please read the following [PAPER ](https://arxiv.org/abs/1810.10584). All implementation is
 in conjunction with the findings of the paper.
@@ -25,12 +25,16 @@ For a quick start, please ensure the following.
 ## Features
 
 
+
+
+
 ## Documentation
 * For a tutorial of our repository: [Quick Start Guide](docs/Quick_start_GUIDE.ipynb)
 * How is the data generated? [Data Generation Explanation](docs/data_gen_expln.ipynb)
 
 
 ## Contributing
+Please read **CONTRIBUTING.md** for details on how to contribute to the project, and the process for submitting pull requests to us.
 
 
 ## Acknowledgment
