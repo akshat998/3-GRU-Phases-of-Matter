@@ -104,12 +104,13 @@ def permute_indexing(MPS, N=16):
     return MPS      
     
 
-def readMPS(MPSf='tensor.txt', N=16,convert=True):
+def readMPS(MPSf, N=16,convert=True):
     """ (fileName, num_tensors, format_conversion) -> list
       
     Populate a list of N tensors with Matrix Product States of 'tensor.txt' based 
     on indices stored in 'index.txt'.
     
+    tensor.txt & index.txt are stored in directory MPSf.
     For a detailed explanation of 'tensor.txt' & 'index.txt', please view 
     'input_file_format_expln.ipynb'
     
@@ -119,13 +120,13 @@ def readMPS(MPSf='tensor.txt', N=16,convert=True):
     @rtype         : list
     """
     # Collect tensor indexes from 'index.txt'
-    indices = read_indices('index.txt')
+    indices = read_indices(MPSf + '/index.txt')
             
     # Initialize right dimensions for subarrays of list (one for each tensor).
     MPS = initialize_MPS_list(indices) # dimensions are assigned based on indices
     
     # MPS_populate will be used to populate MPS
-    MPS_populate = [np.array(list(map(float, line.split()))) for line in open(MPSf)]
+    MPS_populate = [np.array(list(map(float, line.split()))) for line in open(MPSf + '/tensor.txt')]
 
     # Populate MPS with values from MPS_populate
     MPS = populate_tensors(MPS, MPS_populate, indices)

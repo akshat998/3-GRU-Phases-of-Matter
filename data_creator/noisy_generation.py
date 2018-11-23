@@ -247,7 +247,7 @@ def construct_MPS(MPS_type, num_qubits):
         MPS.append(corner_tensor) 
         
     else: 
-        MPS = readMPS(MPSf=MPS_type, N=num_qubits,convert=True)      
+        MPS = readMPS(MPSf=MPS_type, N=num_qubits, convert=True)      
 
     return MPS
 
@@ -441,12 +441,12 @@ if __name__ == "__main__":
         if (MPS_type == 'GHZ'):
             print()
             break
-        # TODO: CHECK FOR EXISTENCE OF index.txt & tensor.txt
-        if (os.path.isdir(os.getcwd() + '/' + MPS_type) == True):
-            print()
-            break
-        
-        print('Invalid Choice! Either use GHZ or a make sure that the custom directory exists \n')
+
+        elif (os.path.isdir(os.getcwd() + '/' + MPS_type) == True):            
+            if ( os.path.isfile(MPS_type + '/tensor.txt' ) and os.path.isfile(MPS_type + '/index.txt' )):
+                print()
+                break
+        print('Invalid Choice! Either use GHZ or a make sure that the custom directory exists with files index.txt & tensor.txt \n')
     
     while True:
         p = float(input("Want to include local noise with probability p? (0 = No noise). \n").strip())
