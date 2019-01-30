@@ -1,10 +1,8 @@
-# ![](auxillary/logo.png)
-
 ## Introduction
-Ǫ́-Hbert is a Quantum Computing library that reconstructs quantum states using Unsupervised Learning.
+This repository uses a Recurrent Neural Network (with 3 stacked GRY cells) for reconstructs quantum states/
 
-Please read the following [PAPER ](https://arxiv.org/abs/1810.10584). All implementation is
-in conjunction with the findings of the paper.
+This implementation is based on the findings of the following [paper ](https://arxiv.org/abs/1810.10584).
+
 
 ## Getting Started
 For a quick start, please ensure the following.
