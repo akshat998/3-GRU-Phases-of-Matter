@@ -70,19 +70,19 @@ class Model(nn.Module):
         self.rnn_2.flatten_parameters()
         self.rnn_3.flatten_parameters()
         
-        sigmoid = nn.Sigmoid() # Pass each output through a non-linearity
+        relu = nn.ReLU() # Pass each output through a non-linearity
 
         # Stack component - 1
         out, self.h_1 = self.rnn_1(x, self.h_1)
-        out = sigmoid(out)
+        out = relu(out)
         
         # Stack component - 2
         out, self.h_2 = self.rnn_2(out, self.h_2)
-        out = sigmoid(out)
+        out = relu(out)
         
         # Stack component - 3
         out, self.h_3 = self.rnn_3(out, self.h_3)
-        out = sigmoid(out)
+        out = relu(out)
         
         # Pass through a Linear layer
         out = self.linear(out) 
@@ -173,7 +173,7 @@ def run_model(num_epochs, N):
             error = train_RNN(optimizer, batch, model, N, epoch)
             print('Batch[{}/{}] Error:{} '.format(n_batch, num_batches, error.data.cpu().numpy()))
             
-        save_model(model, save_model_name, str(epoch))
+            save_model(model, save_model_name, str(n_batch))
 
     # Save trained model
     print("Epochs of Model ", save_model_name, " has been saved in directory 'saved_models'")

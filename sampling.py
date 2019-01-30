@@ -258,6 +258,8 @@ if __name__ == '__main__':
         print('Original. eigenvalies: ', eigenvalues)
         eigenvalues, _ = np.linalg.eigh(rho_rec)   
         print('Reconstc. eigenvalies: ', eigenvalues)
+        Fidelity(np.asanyarray(predictions), M, N) # TODO: REMOVE
+
     else:
         Fidelity(np.asanyarray(predictions), M, N) # Monte Carlo approximation (scalable)
 
