@@ -15,7 +15,9 @@ Before running the code, please ensure you have the following:
 
 For a quick start, please ensure the following.
 
-- Clone the repository: In an appropriate directory run the following command on your Terminal:
+- Clone the repository:
+
+  In an appropriate directory run the following command on your Terminal:
 
   `git clone https://github.com/akshat998/3-GRU-Phases-of-Matter.git`
 
@@ -40,9 +42,9 @@ For a quick start, please ensure the following.
 
   You will be asked to enter some parameters prior to training.
 
-  Error is printed for each batch & after each batch, the model is saved in the directory (with format `EnteredName_batchNumber`):
+  After each batch, an error is printed & the model is saved in the directory (with format `EnteredName_batchNumber`):
 
-   `saved_models`
+   `./saved_models`
 
 - Evaluate your model:
 
