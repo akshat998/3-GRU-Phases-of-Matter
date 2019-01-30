@@ -67,6 +67,6 @@ Make a github issue 😄. Please be as clear and descriptive as possible. Please
 out in person: (akshat[DOT]nigam[AT]mail[DOT]utoronto[DOT]ca)
 
 # Acknowledgment
-* A special thanks to the author of the [paper](https://arxiv.org/abs/1810.10584): [Dr. Juan Carrasquilla](https://vectorinstitute.ai/team/juan-felipe-carrasquilla/)
+* A special thanks to the author of the [Reconstructing quantum states with generative models](https://arxiv.org/abs/1810.10584): [Dr. Juan Carrasquilla](https://vectorinstitute.ai/team/juan-felipe-carrasquilla/)
 
 * Also, the creator of ncon.py: **__________**
