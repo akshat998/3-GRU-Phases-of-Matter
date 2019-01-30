@@ -159,7 +159,7 @@ def run_model(num_epochs, N):
     if torch.cuda.is_available(): # Train on GPU, if available
         model.cuda()
     
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
   
     for epoch in range(num_epochs): 
             
@@ -175,35 +175,6 @@ def run_model(num_epochs, N):
             
         save_model(model, save_model_name, str(epoch))
 
-        # TODO: TESTING
-#        _, M = factory_POVMs('Tetra')
-        
-        # TODO
-#        predictions = sample_model(save_model_name + '_' + str(epoch), 100000, N, K)
-        
-        # Report classical fidelity
-#        histogram = calc_fid(predictions, 100000, 'A', N, K)
-#        histogram = np.asarray(histogram).reshape((K ** N, 1))
-#        print(histogram)
-    
-    # Report quantum fidelity        
-#        if N <= 6:
-#            den_recons, den_orig = calc_quant_fid(histogram, M, K, N)     
-#            print('den_recons = ', den_recons)
-#            print('den_orig = ', den_orig)
-    
-#            eigenvalues, _ = np.linalg.eigh(den_recons)   
-#            print('Reconstr. eigenvalies: ', eigenvalues)
-#            eigenvalues, _ = np.linalg.eigh(den_orig)   
-#            print('Original. eigenvalies: ', eigenvalues)
-        
-#            print('Positivity of density matrix ', all(i >= 0 for i in eigenvalues))
-         
-#        else:
-#            Fidelity(np.asanyarray(predictions), M, N) # Monte Carlo approximation (scalable)
-
-
-    
     # Save trained model
     print("Epochs of Model ", save_model_name, " has been saved in directory 'saved_models'")
     
