@@ -10,12 +10,12 @@ For a quick start, please ensure the following.
 * Clone the repository:
     In an appropriate directory run the following command on your Terminal:
 
-    `git clone https://github.com/akshat998/Q-Hbert.git`
+    `git clone https://github.com/akshat998/3-GRU-Phases-of-Matter.git`
 
 
 * Make sure you `cd` into the right directory.
 
-   `cd Q-Hbert/`
+   `cd 3-GRU-Phases-of-Matter/`
 
 * Need help? Check out our  [Tutorial](docs/Quick_start_GUIDE.ipynb)
 
@@ -27,7 +27,7 @@ For a quick start, please ensure the following.
 
 
 ## Documentation
-* For a tutorial of our repository: [Quick Start Guide](docs/Quick_start_GUIDE.ipynb)
+* For a tutorial of the repository: [Quick Start Guide](docs/Quick_start_GUIDE.ipynb)
 * How is the data generated? [Data Generation Explanation](docs/data_gen_expln.ipynb)
 
 
